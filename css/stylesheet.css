@@ -1,0 +1,234 @@
+
+/* Body */
+body {
+  
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  color: #0B486B;
+  font-size: 1em;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-weight: 1000;
+  color: #0B486B;
+  font-size: 3em;
+  margin: 0.2em 0;
+}
+
+h2, h3, h4 {
+  color: #0B486B;
+}
+
+
+
+section {
+  width: auto;
+  max-width: 1800px;
+  clear: both;
+  overflow: hidden;
+}
+
+hr {
+margin: 0;
+padding: 0;
+}
+
+footer p {
+text-align: center;
+font-size: small;
+font-style: italic;
+line-height: 0.5;
+
+}
+
+a {
+  text-decoration: none;
+  color: #0B486B;
+  }
+
+a :visited{
+color: #0B486B;
+}  
+
+img {
+    max-width: 100%;
+    position: relative;
+
+
+}
+
+/*  IDs   */
+
+
+#resume {
+  width: 70%;
+  margin: 0px auto ;
+  padding: 0px;
+}
+
+#header:hover,#objective:hover, #personal-qualities:hover, #education:hover, #technical-skills:hover,
+#software-packages:hover, #work-experience:hover  {
+  background-color:rgba(133, 154, 222, 0.20 );
+  cursor:context-menu;
+
+}
+
+#technical-skills h3,#software-packages h3, #work-experience h3, 
+#work-experience h4{
+  text-indent: 10%;
+}
+
+#name {
+  float: left;
+  width: 50%;
+}
+
+#name h2 {
+  color: #0B486B;
+  font-size: 1.3em;
+}
+
+#charlie {
+  text-align: center;
+}
+
+
+#contact-info {
+  float: right;
+  width: 50%;
+}
+
+
+
+#title h2 {
+  font-size: 3em; 
+  text-align: center;
+  margin:0 auto;
+}
+
+
+#objective h3 {
+  margin: 2% 10%;
+}
+
+
+
+/* Classes   */
+
+.left-panel {
+  float: left;
+  width: 50%;
+  
+}
+.left-panel h2 {
+
+  font-size: 3em;
+font-style: italic;
+}
+.right-panel {
+  float: right;
+  width: 45%;
+
+}
+
+.text-right {
+  text-align: right;
+  font-weight: bold;
+}
+
+
+nav {
+    width: 10%;
+    float: right;
+    position: fixed;
+    top: 20%;
+    right:3%;
+    text-align: center;
+}
+
+ul {
+   max-width: 100%;
+   font-size: 1.5em;
+   list-style-type:none;
+   padding-left: 0;
+}
+
+li{
+  margin:15px 0;
+  box-shadow: 0px 10px #244484;
+  border-radius: 100%;  
+  text-align: center;
+}
+
+
+li:hover {
+background-color:rgba(133, 154, 222, 0.80 );
+cursor: pointer;
+
+}
+
+li:active {
+  margin-top: 5px;
+  box-shadow: 0px 0px #244484;
+}
+
+/* Responsive */
+
+
+ /* at 1000px */
+ 
+@media  screen  and (max-width: 1000px) {
+  
+  #resume{
+    width:90%;
+
+  }
+    nav {
+    display: none;
+}
+
+}
+
+/* at 750px */
+
+@media screen and (max-width: 750px) {
+  img{
+    display: none;
+  }  
+
+h1,h2,h3,h4,h5,h6 {
+
+  font-size: 20px;
+}
+
+.left-panel h2, #title h2  {
+    font-size: 30px;
+}
+
+
+#header h2, #name {
+  display: none;
+}
+
+#header h1 {
+  font-size: 2em;
+}
+#header .text-right{
+    width: 100%;
+      
+}
+#header p {
+  text-align: center;
+
+}
+}
+
